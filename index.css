@@ -1,0 +1,109 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto'
+}
+
+body {
+  background: url('./coffee.jpg') top center no-repeat;
+  background-size: 1500px;
+  background-position: -400px 150px;
+}
+
+main {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+h1 {
+  color: #e74c3c;
+  font-weight: 600;
+  letter-spacing: -10px;
+  font-size: 160px;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.text {
+  padding-right: 150px;
+  text-align: center;
+}
+
+.apostrophe {
+  padding: 10px;
+}
+
+@media all and (max-width: 1500px) {
+  body {
+    background-size: 1250px;
+    background-position: -400px 200px;
+  }
+}
+
+@media all and (max-width: 1280px) {
+  body {
+    background-size: 1000px;
+    background-position: -300px 100px;
+  }
+
+  h1 {
+    font-size: 140px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  body {
+    background-size: 700px;
+    background-position: -300px 100px;
+  }
+
+  h1 {
+    font-size: 120px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  body {
+    background-size: 700px;
+    background-position: -400px 100px;
+  }
+
+  main {
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 80px;
+  }
+
+  .text {
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 90px;
+    letter-spacing: -5px;
+  }
+
+  h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
